@@ -1,0 +1,29 @@
+{
+  "name": "@suseejs/yaml",
+  "version": "0.1.0",
+  "description": "Yaml frontmatter from markdown and load yaml config files",
+  "scripts": {
+    "build": "susee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwe8/yaml.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/lwe8/yaml/issues"
+  },
+  "homepage": "https://github.com/lwe8/yaml#readme",
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.8.0",
+    "susee": "^1.5.3",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.1"
+  }
+}
