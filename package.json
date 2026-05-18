@@ -2,6 +2,22 @@
   "name": "@suseejs/yaml",
   "version": "0.1.0",
   "description": "Yaml frontmatter from markdown and load yaml config files",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.cts",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
   "scripts": {
     "build": "susee"
   },
@@ -10,9 +26,12 @@
     "url": "git+https://github.com/lwe8/yaml.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Pho Thin Mg",
+    "email": "phothinmg@disroot.org",
+    "url": "https://phothinmg.github.io/"
+  },
   "license": "Apache-2.0",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/lwe8/yaml/issues"
   },
@@ -25,5 +44,11 @@
   },
   "dependencies": {
     "js-yaml": "^4.1.1"
-  }
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "dist/**/*"
+  ]
 }
